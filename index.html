@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODSTORE - Domine Todas as Plataformas</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --primary-green: #23d160;
+            --text-white: #ffffff;
+            --text-gray: #8b949e;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-white);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #30363d;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span { color: var(--primary-green); }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: radial-gradient(circle at top, #1a2c1e 0%, #0d1117 70%);
+        }
+
+        .badge {
+            border: 1px solid var(--primary-green);
+            color: var(--primary-green);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        h1 { font-size: 2.5rem; margin: 20px 0; }
+        h1 span { color: var(--primary-green); }
+
+        .btn-primary {
+            background-color: var(--primary-green);
+            color: #000;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        /* Stats Section */
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .stat-item h2 { color: var(--primary-green); margin-bottom: 5px; }
+        .stat-item p { color: var(--text-gray); font-size: 0.9rem; }
+
+        /* Products Section */
+        .products { padding: 40px 20px; }
+        .product-card {
+            background-color: var(--card-bg);
+            border: 1px solid #30363d;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .product-card.featured { border-color: var(--primary-green); }
+        .tag-featured {
+            background-color: var(--primary-green);
+            color: #000;
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 2px 15px;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+
+        .price { font-size: 1.8rem; font-weight: bold; margin: 20px 0; }
+        .price span { font-size: 1rem; color: var(--text-gray); }
+
+        /* Payment Section */
+        .payment-box {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px dotted var(--primary-green);
+        }
+
+        .pix-key {
+            background: #0d1117;
+            padding: 15px;
+            border-radius: 8px;
+            word-break: break-all;
+            margin: 15px 0;
+            font-family: monospace;
+        }
+
+        .whatsapp-btn {
+            background-color: #25d366;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            display: block;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">🎯 MOD<span>STORE</span></div>
+        <div class="menu-icon">☰</div>
+    </header>
+
+    <section class="hero">
+        <span class="badge">⚡ Premium Mod Menus</span>
+        <h1>Domine Todas as <br><span>Plataformas</span></h1>
+        <p>Mod Menus exclusivos para iOS, Android e Emulador.</p>
+        <a href="#produtos" class="btn-primary">Ver Produtos</a>
+    </section>
+
+    <section class="stats">
+        <div class="stat-item">
+            <h2>5K+</h2>
+            <p>Clientes Ativos</p>
+        </div>
+        <div class="stat-item">
+            <h2>99%</h2>
+            <p>Uptime</p>
+        </div>
+        <div class="stat-item">
+            <h2>24/7</h2>
+            <p>Suporte</p>
+        </div>
+    </section>
+
+    <section class="products" id="produtos">
+        <h3 style="text-align: center; color: var(--primary-green);">NOSSOS PRODUTOS</h3>
+        <h2 style="text-align: center;">Escolha sua Plataforma</h2>
+
+        <div class="product-card featured">
+            <div class="tag-featured">MAIS VENDIDO</div>
+            <h3>Hack iOS</h3>
+            <p>Mod Menu otimizado para dispositivos Apple.</p>
+            <ul>
+                <li>✅ HS Pescoço</li>
+                <li>✅ HS Peito</li>
+            </ul>
+            <div class="price">R$ 39,90 <span>/mes</span></div>
+            <a href="#" class="btn-primary" style="width: 80%; text-align: center;">Comprar Agora</a>
+        </div>
+
+        <div class="product-card">
+            <h3>Hack Android</h3>
+            <p>Completo para todos os dispositivos. Root e sem root.</p>
+            <div class="price">R$ 39,90 <span>/mes</span></div>
+            <a href="#" class="btn-primary" style="width: 80%; text-align: center;">Comprar Agora</a>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="payment-box">
+            <h3>Chave Pix</h3>
+            <p>Tipo: Chave aleatória</p>
+            <div class="pix-key">5ec5d197-01b3-46e8-b94d-3301f33d77fd</div>
+            <a href="#" class="btn-primary">Copiar Pix</a>
+            
+            <div style="margin-top: 30px;">
+                <p>Após o pagamento, chame no suporte:</p>
+                <a href="https://wa.me/5567992039174" class="whatsapp-btn">Chamar no WhatsApp</a>
+                <p style="font-size: 0.8rem; margin-top: 5px;">Número: (67) 99203-9174</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
